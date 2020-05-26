@@ -1,0 +1,29 @@
+:root {
+  --pattern-cutout: -4rem;
+}
+
+.main-header {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: $height-header-responsive;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  z-index: var(--z-fixed);
+  
+}
+
+.container-pattern {
+  width: 100%;
+}
+
+.pattern {
+  position: absolute;
+  top: var(--pattern-cutout);
+  right: 0;
+  z-index: var(--z-back);
+
+
+}

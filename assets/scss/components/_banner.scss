@@ -1,0 +1,29 @@
+.banner {
+  margin-bottom: 6rem;
+}
+
+.container-image-banner {
+  width: 100%;
+  padding: 1rem;
+
+   img {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.information-banner {
+  text-align: center;
+
+   .title-banner {
+    color: var(--Dark-Blue);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+   .text-banner {
+    padding: 0 2rem;
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  padding: 2rem 1rem;
+  color: var(--White);
+  background: var(--Very-Dark-Blue);
+
+  .updates {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-gap: .5rem;
+
+   .inpt-submit {
+     background: var(--Bright-Red);
+     color: var(--White);
+     font-weight: 700;
+     cursor: pointer;
+
+      &:hover {
+    opacity: .7;
+      }
+    }
+  }
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: .9rem;
+  padding: 2rem 0;
+}
+
+.footer-sociales {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-brand {
+   img {
+     margin: 2.5rem auto;
+     display: block;
+   }
+}
+
+.rights {
+  text-align: center;
+  font-size: .9rem;
+}
