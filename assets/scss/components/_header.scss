@@ -12,6 +12,13 @@
   left: 0;
   padding: 2rem 1rem;
   z-index: var(--z-fixed);
+
+  @include media(large) {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
   
 }
 

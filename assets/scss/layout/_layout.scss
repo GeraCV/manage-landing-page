@@ -1,9 +1,6 @@
 body {
     margin-top: $height-header-responsive;
 
-    @include media(xlarge) {
-        margin-top: $height; 
-    }
 }
 
 .btn-solid {

@@ -4,22 +4,41 @@
 
 .primary-section {
   margin-bottom: 4rem;
+
+  @include media(large){
+    display: flex;
+    padding: 0 4rem;
+  }
 }
 
 .manage {
   text-align: center;
   margin-bottom: 3rem;
 
+  @include media(large){
+    text-align: start;
+  }
+
    .title-manage {
     color: var(--Dark-Blue);
     font-weight: 700;
     font-size: 1.8rem;
     padding: 0 1rem;
+
+    @include media(large){
+      width: 85%;
+      padding: 0;
+    }
   }
 
    .text-manage {
     padding: 0 2rem;
     font-size: .8rem;
+    
+    @include media(large){
+      padding: 0;
+      width: 60%;
+    }
     
   }
 }
@@ -31,6 +50,12 @@
   .difference {
   position: relative;
   margin-bottom: 2rem;
+
+  @include media(large){
+    width: 80%;
+    margin: auto;
+
+  }
 
      .number {
       font-size: .8rem;
@@ -53,6 +78,10 @@
       border-top-left-radius: var(--bdr-radius);
       border-bottom-left-radius: var(--bdr-radius);
       padding-bottom: .2rem;
+
+      @include media(large){
+        background: none;
+      }
     }
 
      .difference-text {

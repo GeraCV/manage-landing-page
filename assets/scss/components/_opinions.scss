@@ -1,5 +1,6 @@
 .second-section {
    overflow: hidden;
+
 }
 
 .opinions-title {
@@ -12,12 +13,17 @@
 .container-opinions {
   display: flex;
   width: max-content;
+
+  @include media(large){
+    width: 100%;
+  }
 }
 
 .container-opinion {
   width: calc(100vw - 16px);
   text-align: center;
   padding: 0 2rem;
+  
 
    .container-avatar {
      img {
@@ -43,11 +49,30 @@
   padding: 3rem 1rem;
   background: var(--Bright-Red);
 
+  @include media(large){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 4rem;
+    text-align: start;
+    
+  }
+
   &-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--White);
+
+    @include media(large){
+      width: 60%;
+      font-size: 2rem;
+    }
+  
   }
 }
 
+.btn-feature {
+  @include media(large){
+    justify-content: flex-end;
+  }
+}
 

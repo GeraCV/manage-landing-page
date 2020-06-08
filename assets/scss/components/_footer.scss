@@ -1,7 +1,17 @@
+:root {
+  --ma: auto;
+}
+
 .footer {
   padding: 2rem 1rem;
   color: var(--White);
   background: var(--Very-Dark-Blue);
+
+  @include media(large){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content max-content;
+  }
 
   .updates {
   display: grid;
@@ -14,8 +24,18 @@
      font-weight: 700;
      cursor: pointer;
 
+     @include media(large){
+       height: 2rem;
+     }
+
       &:hover {
     opacity: .7;
+      }
+    }
+
+    .inpt-text {
+      @include media(large){
+        height: 2rem;
       }
     }
   }
@@ -26,6 +46,10 @@
   justify-content: space-around;
   font-size: .9rem;
   padding: 2rem 0;
+
+  @include media(large) {
+    padding: 0;
+  }
 }
 
 .footer-sociales {
@@ -37,10 +61,47 @@
    img {
      margin: 2.5rem auto;
      display: block;
+
+     @include media(large){
+       margin: 0 auto;
+     }
    }
 }
 
 .rights {
   text-align: center;
   font-size: .9rem;
+}
+
+@include media(large) {
+
+  .updates {
+    grid-column: 3;
+    grid-row-end: 2;
+    margin: var(--ma);
+  }
+  .footer-somethings {
+    grid-row: span 2;
+  }
+
+  .footer-sociales {
+    grid-column: 1;
+    grid-row: 2;
+    margin: var(--ma);
+
+    .red-social {
+      padding: 0 .5rem;
+    }
+  }
+
+  .footer-brand {
+    grid-column: 1;
+    grid-row: 1;
+    margin: var(--ma);
+  }
+
+  .rights {
+    grid-column: 3;
+    margin: auto;
+  }
 }
